@@ -1,0 +1,9 @@
+# Font style metadata
+name = "Astro"
+# Optional Google font URL
+google_fonts = "family=Orbitron"
+# Font families
+heading_font = "Orbitron"
+body_font = "Orbitron"
+nav_font = "Orbitron"
+mono_font = "Orbitron"

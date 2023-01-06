@@ -8,7 +8,7 @@
 appearance:
   theme_day:
   theme_night: minimal
-  font: native
+  font: Astro
   font_size: L
 
 # SEO
