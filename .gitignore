@@ -321,7 +321,7 @@ dist
 .hugo_build.lock
 public/
 vendor/
-resources/
+**resources/*
 assets/jsconfig.json
 hugo_stats.json
 _vendor
