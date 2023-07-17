@@ -322,6 +322,6 @@ dist
 public/
 vendor/
 **resources/*
-assets/jsconfig.json
+**/assets/jsconfig.json
 hugo_stats.json
 _vendor
