@@ -1,22 +1,37 @@
 {
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "npm-check-updates": "^16.14.15",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^5.0.5"
-  },
+  "name": "astronetix.com",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "clean:hugo": "rimraf hugo{.log,_stats.json} resources public assets/jsconfig.json .hugo_build.lock _vendor",
-    "serve": "run-s serve:hugo",
-    "build": "run-s build:hugo",
-    "_start:_hugo": "./shoginn_scripts/bin/build/hugo.sh",
-    "serve:hugo": "cross-env SHOGINN_SCRIPTS_SERVE_HUGO=1 run-s _start:_hugo",
-    "build:hugo": "cross-env SHOGINN_SCRIPTS_BUILD_HUGO=1 run-s clean:hugo _start:_hugo",
-    "update:deps": "npx ncu && npm install"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write **/*.astro .",
+    "clean": "rimraf dist .astro node_modules"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/fa-brands": "^1.1.8",
+    "@iconify-json/mdi": "^1.1.64",
+    "@types/micromodal": "^0.3.5",
+    "astro": "^4.4.1",
+    "astro-icon": "^1.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "rimraf": "^5.0.5",
+    "tailwindcss-fluid-type": "^2.0.3"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0"
+    "@fontsource-variable/inter": "^5.0.16",
+    "astro-font": "^0.0.77",
+    "micromodal": "^0.4.10",
+    "sharp": "^0.33.2",
+    "tailwindcss": "^3.4.1",
+    "tiny-invariant": "^1.3.1",
+    "typescript": "^5.3.3"
   }
 }
