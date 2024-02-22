@@ -6,11 +6,16 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "run-s build:hugo",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write **/*.astro .",
-    "clean": "rimraf dist .astro node_modules"
+    "clean": "rimraf dist .astro node_modules",
+    "clean:hugo": "rimraf hugo{.log,_stats.json} resources public assets/jsconfig.json .hugo_build.lock _vendor",
+    "serve": "run-s serve:hugo",
+    "_start:_hugo": "./shoginn_scripts/bin/build/hugo.sh",
+    "serve:hugo": "cross-env SHOGINN_SCRIPTS_SERVE_HUGO=1 run-s _start:_hugo",
+    "build:hugo": "cross-env SHOGINN_SCRIPTS_BUILD_HUGO=1 run-s clean:hugo _start:_hugo"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
@@ -19,6 +24,8 @@
     "@types/micromodal": "^0.3.5",
     "astro": "^4.4.1",
     "astro-icon": "^1.1.0",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
