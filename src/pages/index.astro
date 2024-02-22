@@ -3,9 +3,8 @@ import { AstroFont } from "astro-font";
 import Footer from "~/components/footer.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
+import SEOMetadata from "~/components/seo-metadata.astro";
 
-const { generator, site } = Astro;
-const image = new URL("social.png", site);
 const description =
   "Astronetix is a space technology company that develops and deploys space-based solutions for the commercial and government sectors.";
 ---
@@ -14,20 +13,15 @@ const description =
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="generator" content={generator} />
 
-    <title>Astronetix</title>
-    <meta name="description" content={description} />
-
-    <!-- social media -->
-    <meta property="og:title" content="Astronetix" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <SEOMetadata
+      siteName="Astronetix"
+      title="Astronetix"
+      description={description}
+      astroSitemap={false}
+      canonicalUrl={Astro.url.toString()}
+      type="website"
+    />
 
     <AstroFont
       config={[
