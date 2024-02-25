@@ -25,7 +25,6 @@
     "tailwindcss-fluid-type": "^2.0.3"
   },
   "dependencies": {
-    "@fontsource-variable/inter": "^5.0.16",
     "astro-font": "^0.0.77",
     "sharp": "^0.33.2",
     "sharp-ico": "^0.1.5",
