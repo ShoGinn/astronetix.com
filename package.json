@@ -24,7 +24,7 @@
     "@iconify-json/fa-brands": "^1.1.8",
     "@iconify-json/mdi": "^1.1.64",
     "astro": "^4.5.6",
-    "astro-font": "^0.0.78",
+    "astro-font": "^0.0.80",
     "astro-icon": "^1.1.0",
     "sharp": "^0.33.2",
     "sharp-ico": "^0.1.5",
