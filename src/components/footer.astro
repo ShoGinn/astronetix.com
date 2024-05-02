@@ -1,18 +1,18 @@
 ---
-import { Icon } from "astro-icon/components";
-import HeroImage from "~/components/hero-image.astro";
-import type { FooterLink } from "~/types";
+import { Icon } from 'astro-icon/components';
+import HeroImage from '~/components/hero-image.astro';
+import type { FooterLink } from '~/types';
 
 const links: Array<FooterLink> = [
   {
-    url: "https://www.linkedin.com/company/astronetix/",
-    description: "Astronetix on LinkedIn",
-    icon: "mdi:linkedin",
+    url: 'https://www.linkedin.com/company/astronetix/',
+    description: 'Astronetix on LinkedIn',
+    icon: 'mdi:linkedin',
   },
   {
-    url: "mailto:info@astronetix.com",
-    description: "Email Astronetix",
-    icon: "mdi:envelope",
+    url: 'mailto:info@astronetix.com',
+    description: 'Email Astronetix',
+    icon: 'mdi:envelope',
   },
 ];
 ---
@@ -25,10 +25,7 @@ const links: Array<FooterLink> = [
     {
       links.map((link) => (
         <li>
-          <a
-            class="flex size-16 items-center justify-center rounded-full border-2 border-current p-4"
-            href={link.url}
-          >
+          <a class="flex size-16 items-center justify-center rounded-full border-2 border-current p-4" href={link.url}>
             <span class="sr-only">{link.description}</span>
             <Icon class="size-full" name={link.icon} />
           </a>

@@ -1,13 +1,24 @@
 ---
-import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
-import astronautImage from "~/assets/astronaut.png";
-import HeroImage from "~/components/hero-image.astro";
-import Starfield from "~/components/starfield.astro";
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import astronautImage from '~/assets/astronaut.png';
+import HeroImage from '~/components/hero-image.astro';
+import Starfield from '~/components/starfield.astro';
 
 const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
+const sizes = '(min-width: 640px) 42vw, 67vw';
 ---
+<style>
+  /* ...other styles... */
+
+  :global(#splash-bg-fallback) {
+    display: none;
+  }
+
+  :global(noscript) ~ :global(#splash-bg-fallback) {
+    display: block;
+  }
+</style>
 
 <section class="relative h-full bg-black">
   <Starfield />
@@ -15,26 +26,16 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     <HeroImage />
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
-    <div
-      class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
-    >
+    <div class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end">
       <Icon name="logomark" class="size-24 text-white md:size-32" />
 
-      <h1
-        class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
-      >
-        Astronetix
-      </h1>
+      <h1 class="gradient-text text-center font-extrabold tracking-tighter text-8xl">Astronetix</h1>
       <p class="space-y-8 px-4 text-center">
-        We are a <span class="text-primary">space technology</span> company that
-        develops and deploys space-based solutions for the commercial and government
-        sectors.
+        We are a <span class="text-primary">space technology</span> company that develops and deploys space-based solutions
+        for the commercial and government sectors.
       </p>
     </div>
-    <div
-      id="astronaut"
-      class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
-    >
+    <div id="astronaut" class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start">
       <Image
         class="h-full w-full object-cover"
         src={astronautImage}
@@ -47,13 +48,6 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
   </div>
 </section>
 
-<noscript>
-  <style>
-    #splash-bg-fallback {
-      display: block;
-    }
-  </style>
-</noscript>
 
 <style>
   @keyframes float {

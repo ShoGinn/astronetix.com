@@ -1,7 +1,7 @@
 name: Release
 on:
   workflow_run:
-    workflows: ["Proof"]
+    workflows: ['Proof']
     branches:
       - main
     types:
@@ -14,4 +14,3 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         with:
           release-type: node
-          package-name: release-please-action

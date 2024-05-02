@@ -1,74 +1,74 @@
 ---
-import type { SEOProps } from "~/types";
-import favIconSVG from "~/assets/favicon.svg";
-import favIconPNG from "~/assets/favicon.png";
-import socialPNG from "~/assets/social.png";
-import { getImage } from "astro:assets";
+import type { SEOProps } from '~/types';
+import favIconSVG from '~/assets/favicon.svg';
+import favIconPNG from '~/assets/favicon.png';
+import socialPNG from '~/assets/social.png';
+import { getImage } from 'astro:assets';
 
 export interface Props extends SEOProps {}
 
 const props = { ...Astro.props } as Props;
 
 /* ———————————————————————————————————————————— Typeguards + Fallbacks —————— */
-if (typeof props.siteName !== "string") {
+if (typeof props.siteName !== 'string') {
   props.siteName = undefined;
 }
-if (typeof props.title !== "string") {
+if (typeof props.title !== 'string') {
   props.title = undefined;
 }
-if (typeof props.description !== "string") {
+if (typeof props.description !== 'string') {
   props.description = undefined;
 }
-if (typeof props.image !== "string") {
+if (typeof props.image !== 'string') {
   const socialImage = await getImage({
     src: socialPNG,
     height: 630,
     width: 1200,
-    format: "png",
+    format: 'png',
   });
   props.image = socialImage.src;
 }
-if (typeof props.favicon !== "boolean") {
+if (typeof props.favicon !== 'boolean') {
   const faviconSvg = await getImage({
     src: favIconSVG,
-    format: "svg",
+    format: 'svg',
   });
   props.favicon = true;
   props.faviconSvg = faviconSvg.src;
 }
-if (typeof props.appleTouchIcon !== "string") {
+if (typeof props.appleTouchIcon !== 'string') {
   const appleTouchIcon = await getImage({
     src: favIconPNG,
-    format: "png",
+    format: 'png',
     width: 180,
     height: 180,
   });
   props.appleTouchIcon = appleTouchIcon.src;
 }
-if (typeof props.appleTouchIcon !== "string") {
+if (typeof props.appleTouchIcon !== 'string') {
   props.appleTouchIcon = undefined;
 }
-if (typeof props.author !== "string") {
+if (typeof props.author !== 'string') {
   props.author = undefined;
 }
-if (typeof props.copyright !== "string") {
+if (typeof props.copyright !== 'string') {
   props.copyright = undefined;
 }
-if (typeof props.astroSitemap !== "boolean") {
+if (typeof props.astroSitemap !== 'boolean') {
   props.astroSitemap = true;
 }
-if (typeof props.astroGenerator !== "boolean") {
+if (typeof props.astroGenerator !== 'boolean') {
   props.astroGenerator = true;
 }
-if (typeof props.viewport !== "string") {
-  props.viewport = "width=device-width";
+if (typeof props.viewport !== 'string') {
+  props.viewport = 'width=device-width';
 }
-if (typeof props.canonicalUrl !== "string") {
+if (typeof props.canonicalUrl !== 'string') {
   props.canonicalUrl = import.meta.env.SITE
-    ? import.meta.env.SITE + Astro.url.pathname.replace(/\.html$/, "")
+    ? import.meta.env.SITE + Astro.url.pathname.replace(/\.html$/, '')
     : Astro.url.toString();
 }
-if (typeof props.type !== "string") {
+if (typeof props.type !== 'string') {
   props.type = undefined;
 }
 /* —————————————————————————————————————————————————————————————————————————— */
@@ -77,7 +77,7 @@ if (typeof props.type !== "string") {
 <!-- SEO -->
 <link rel="canonical" href={props.canonicalUrl} />
 
-<meta property="og:type" content={props.type || "website"} />
+<meta property="og:type" content={props.type || 'website'} />
 {props.viewport && <meta name="viewport" content={props.viewport} />}
 
 {
@@ -109,11 +109,7 @@ if (typeof props.type !== "string") {
   props.description && (
     <>
       <meta property="og:image:alt" content={props.description} />
-      <meta
-        name="description"
-        property="og:description"
-        content={props.description}
-      />
+      <meta name="description" property="og:description" content={props.description} />
       <meta name="twitter:description" content={props.description} />
     </>
   )
@@ -124,7 +120,7 @@ if (typeof props.type !== "string") {
     <>
       <meta property="og:image" content={props.image} />
       <meta name="twitter:image:src" content={props.image} />
-      <meta name="twitter:card" content={"summary_large_image"} />
+      <meta name="twitter:card" content={'summary_large_image'} />
     </>
   )
 }
@@ -137,11 +133,7 @@ if (typeof props.type !== "string") {
     </>
   )
 }
-{
-  props.appleTouchIcon && (
-    <link rel="apple-touch-icon" href={props.appleTouchIcon} />
-  )
-}
+{props.appleTouchIcon && <link rel="apple-touch-icon" href={props.appleTouchIcon} />}
 
 <!-- | -->
 
@@ -151,11 +143,7 @@ if (typeof props.type !== "string") {
 
 <!-- | -->
 
-{
-  props.astroSitemap && (
-    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
-  )
-}
+{props.astroSitemap && <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />}
 
 {props.astroGenerator && <meta name="generator" content={Astro.generator} />}
 
