@@ -32,7 +32,7 @@
     "typescript-eslint": "^7.8.0"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
+    "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/fa-brands": "^1.1.8",
     "@iconify-json/mdi": "^1.1.66",
