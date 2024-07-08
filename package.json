@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@eslint/js": "9.6.0",
-    "@typescript-eslint/eslint-plugin": "7.15.0",
-    "@typescript-eslint/parser": "7.15.0",
+    "@typescript-eslint/eslint-plugin": "7.16.0",
+    "@typescript-eslint/parser": "7.16.0",
     "astro-eslint-parser": "1.0.2",
     "eslint": "8.57.0",
     "eslint-plugin-astro": "1.2.2",
@@ -29,10 +29,10 @@
     "prettier-plugin-tailwindcss": "0.6.5",
     "rimraf": "5.0.8",
     "typescript": "5.5.3",
-    "typescript-eslint": "7.15.0"
+    "typescript-eslint": "7.16.0"
   },
   "dependencies": {
-    "@astrojs/check": "0.7.0",
+    "@astrojs/check": "0.8.0",
     "@astrojs/tailwind": "5.1.0",
     "@iconify-json/fa-brands": "1.1.8",
     "@iconify-json/mdi": "1.1.67",
