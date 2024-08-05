@@ -61,7 +61,9 @@
 
   function setup() {
     invariant(ctx, 'canvas context should not be null');
-    rafId > 0 && cancelAnimationFrame(rafId);
+    if (rafId > 0) {
+      cancelAnimationFrame(rafId);
+    }
 
     const { clientWidth: width, clientHeight: height } = container;
     const dpr = window.devicePixelRatio || 1;

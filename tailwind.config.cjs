@@ -1,3 +1,5 @@
+import tailwindcssFluidType from 'tailwindcss-fluid-type';
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}'],
   theme: {
@@ -25,5 +27,5 @@ module.exports = {
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require('tailwindcss-fluid-type')],
+  plugins: [tailwindcssFluidType],
 };
