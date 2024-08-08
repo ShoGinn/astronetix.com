@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.13.1(@types/node@22.1.0)(typescript@5.5.4))(tailwindcss@3.4.8)
+        version: 5.1.0(astro@4.13.2(@types/node@22.1.0)(typescript@5.5.4))(tailwindcss@3.4.9)
       '@iconify-json/fa-brands':
         specifier: 1.1.9
         version: 1.1.9
@@ -18,8 +18,8 @@ importers:
         specifier: 1.1.68
         version: 1.1.68
       astro:
-        specifier: 4.13.1
-        version: 4.13.1(@types/node@22.1.0)(typescript@5.5.4)
+        specifier: 4.13.2
+        version: 4.13.2(@types/node@22.1.0)(typescript@5.5.4)
       astro-font:
         specifier: 0.1.81
         version: 0.1.81
@@ -33,11 +33,11 @@ importers:
         specifier: 0.1.5
         version: 0.1.5
       tailwindcss:
-        specifier: 3.4.8
-        version: 3.4.8
+        specifier: 3.4.9
+        version: 3.4.9
       tailwindcss-fluid-type:
         specifier: 2.0.6
-        version: 2.0.6(tailwindcss@3.4.8)
+        version: 2.0.6(tailwindcss@3.4.9)
       tiny-invariant:
         specifier: 1.3.3
         version: 1.3.3
@@ -938,8 +938,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro@4.13.1:
-    resolution: {integrity: sha512-VnMjAc+ykFsIVjgbu9Mt/EA1fMIcPMXbU89h3ATwGOzSIKDsQH72bDgfJkWiwk6u0OE90GeP5EPhAT28Twf9oA==}
+  astro@4.13.2:
+    resolution: {integrity: sha512-bdfUV6zfOWOV/IbROqVx+1cuAFXY0PZpVxr4JO9YxCKa5AfQRR8RKXJ2k8QUjalA6dmxQ9FgAQw3FRrzHVOGEQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2541,8 +2541,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
 
-  tailwindcss@3.4.8:
-    resolution: {integrity: sha512-GkP17r9GQkxgZ9FKHJQEnjJuKBcbFhMFzKu5slmN6NjlCuFnYJMQ8N4AZ6VrUyiRXlDtPKHkesuQ/MS913Nvdg==}
+  tailwindcss@3.4.9:
+    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2972,13 +2972,13 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.13.1(@types/node@22.1.0)(typescript@5.5.4))(tailwindcss@3.4.8)':
+  '@astrojs/tailwind@5.1.0(astro@4.13.2(@types/node@22.1.0)(typescript@5.5.4))(tailwindcss@3.4.9)':
     dependencies:
-      astro: 4.13.1(@types/node@22.1.0)(typescript@5.5.4)
+      astro: 4.13.2(@types/node@22.1.0)(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.40)
       postcss: 8.4.40
       postcss-load-config: 4.0.2(postcss@8.4.40)
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
     transitivePeerDependencies:
       - ts-node
 
@@ -3802,9 +3802,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.13.1(@types/node@22.1.0)(typescript@5.5.4):
+  astro@4.13.2(@types/node@22.1.0)(typescript@5.5.4):
     dependencies:
-      '@astrojs/compiler': 2.10.1
+      '@astrojs/compiler': 2.10.2
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/markdown-remark': 5.2.0
       '@astrojs/telemetry': 3.1.0
@@ -5709,11 +5709,11 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.3
 
-  tailwindcss-fluid-type@2.0.6(tailwindcss@3.4.8):
+  tailwindcss-fluid-type@2.0.6(tailwindcss@3.4.9):
     dependencies:
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
-  tailwindcss@3.4.8:
+  tailwindcss@3.4.9:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
