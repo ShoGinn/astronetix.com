@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
+        custom: ['var(--font-ethnocentric)', 'sans-serif'],
       },
       colors: {
         primary: 'var(--color-primary)',

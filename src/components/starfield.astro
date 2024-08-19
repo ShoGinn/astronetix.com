@@ -89,6 +89,8 @@
     invariant(ctx, 'canvas context should not be null');
     const { clientWidth: width, clientHeight: height } = container;
 
+    ctx.clearRect(-width / 2, -height / 2, width, height); // Clear the canvas before drawing
+
     for (const star of stars) {
       star.update(width, height, SPEED);
       star.draw(ctx);
@@ -97,4 +99,7 @@
     ctx.fillRect(-width / 2, -height / 2, width, height);
     rafId = requestAnimationFrame(frame);
   }
+
+  // Initial setup call
+  setup();
 </script>
