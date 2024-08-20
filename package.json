@@ -35,7 +35,7 @@
     "@astrojs/tailwind": "5.1.0",
     "@iconify-json/fa-brands": "1.1.9",
     "@iconify-json/mdi": "1.1.68",
-    "astro": "4.14.2",
+    "astro": "4.14.3",
     "astro-font": "0.1.81",
     "astro-icon": "1.1.1",
     "sharp": "0.33.5",
