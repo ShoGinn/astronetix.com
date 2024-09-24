@@ -67,8 +67,8 @@ importers:
         specifier: 15.9.0
         version: 15.9.0
       html-validate:
-        specifier: 8.23.0
-        version: 8.23.0
+        specifier: 8.24.0
+        version: 8.24.0
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -76,8 +76,8 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       prettier-plugin-tailwindcss:
-        specifier: 0.6.6
-        version: 0.6.6(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
+        specifier: 0.6.8
+        version: 0.6.8(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
@@ -1609,8 +1609,8 @@ packages:
   html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
 
-  html-validate@8.23.0:
-    resolution: {integrity: sha512-j4BZVXGiQVVO46bh/gKlFGXcuV+LzP3m//VmrrbCWiATWaGWurl5DhMr3im9zoxhkIb99CffxdJ3HRI3vLSM4w==}
+  html-validate@8.24.0:
+    resolution: {integrity: sha512-PV6XQgIt9I7lI1qrLpykFhpGHEmM5me0J0iQsfQK9tPZvZNiwUIT03/gc+v5WqK38hOkV2+y3HpXxMZLXG4tDw==}
     engines: {node: '>= 16.14'}
     hasBin: true
     peerDependencies:
@@ -2313,8 +2313,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-tailwindcss@0.6.6:
-    resolution: {integrity: sha512-OPva5S7WAsPLEsOuOWXATi13QrCKACCiIonFgIR6V4lYv4QLp++UXVhZSzRbZxXGimkQtQT86CC6fQqTOybGng==}
+  prettier-plugin-tailwindcss@0.6.8:
+    resolution: {integrity: sha512-dGu3kdm7SXPkiW4nzeWKCl3uoImdd5CTZEJGxyypEPL37Wj0HT2pLqjrvSei1nTeuQfO4PUfjeW5cTUNRLZ4sA==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -4818,7 +4818,7 @@ snapshots:
 
   html-escaper@3.0.3: {}
 
-  html-validate@8.23.0:
+  html-validate@8.24.0:
     dependencies:
       '@html-validate/stylish': 4.2.0
       '@sidvind/better-ajv-errors': 3.0.1(ajv@8.17.1)
@@ -5635,7 +5635,7 @@ snapshots:
       prettier: 3.3.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-tailwindcss@0.6.6(prettier-plugin-astro@0.14.1)(prettier@3.3.3):
+  prettier-plugin-tailwindcss@0.6.8(prettier-plugin-astro@0.14.1)(prettier@3.3.3):
     dependencies:
       prettier: 3.3.3
     optionalDependencies:
