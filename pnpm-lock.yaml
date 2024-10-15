@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: 5.1.2
-        version: 5.1.2(astro@4.16.4(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)
+        version: 5.1.2(astro@4.16.5(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)
       '@iconify-json/fa-brands':
         specifier: 1.2.0
         version: 1.2.0
@@ -18,8 +18,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       astro:
-        specifier: 4.16.4
-        version: 4.16.4(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
+        specifier: 4.16.5
+        version: 4.16.5(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
       astro-font:
         specifier: 0.1.81
         version: 0.1.81
@@ -209,11 +209,6 @@ packages:
   '@babel/highlight@7.25.7':
     resolution: {integrity: sha512-iYyACpW3iW8Fw+ZybQK+drQre+ns/tKpXbNESfrhNnPLIklLbXr7MYJ6gPEd0iETGLOK+SxMjVvKb/ffmk+FEw==}
     engines: {node: '>=6.9.0'}
-
-  '@babel/parser@7.25.7':
-    resolution: {integrity: sha512-aZn7ETtQsjjGG5HruveUK06cU3Hljuhd9Iojm4M8WWv3wLE6OkE5PWbDUkItmMgegmccaITudyuW5RPYrYlgWw==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
 
   '@babel/parser@7.25.8':
     resolution: {integrity: sha512-HcttkxzdPucv3nNFmfOOMfFf64KgdJVqm1KaCm25dPGMLElo9nsLvXeJECQg8UzPuBGLyTSA0ZzqCtDSzKTEoQ==}
@@ -973,8 +968,8 @@ packages:
   astro-icon@1.1.1:
     resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
 
-  astro@4.16.4:
-    resolution: {integrity: sha512-W/ETxHRkt9iEAj1RVSqV3bjSGaGXEFJHqeNpPhvJIj720hC3V/ZBDAd6FpMW291eiZPtxhGh+c/VDtkD6avPXQ==}
+  astro@4.16.5:
+    resolution: {integrity: sha512-v8mKWcEPN7hkfyVsMFWV0F8UgL4GUJKT172KTB7dePO3yJb64HBwCckC0QnA60QQh3jK6+2xwyWEc5QvCeqjtg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3093,9 +3088,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.4(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.5(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.14)':
     dependencies:
-      astro: 4.16.4(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
+      astro: 4.16.5(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3208,10 +3203,6 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.1.0
-
-  '@babel/parser@7.25.7':
-    dependencies:
-      '@babel/types': 7.25.8
 
   '@babel/parser@7.25.8':
     dependencies:
@@ -3661,7 +3652,7 @@ snapshots:
 
   '@types/babel__core@7.20.5':
     dependencies:
-      '@babel/parser': 7.25.7
+      '@babel/parser': 7.25.8
       '@babel/types': 7.25.8
       '@types/babel__generator': 7.6.8
       '@types/babel__template': 7.4.4
@@ -3673,7 +3664,7 @@ snapshots:
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.25.7
+      '@babel/parser': 7.25.8
       '@babel/types': 7.25.8
 
   '@types/babel__traverse@7.20.6':
@@ -3969,7 +3960,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.16.4(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3):
+  astro@4.16.5(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -4959,7 +4950,7 @@ snapshots:
 
   magicast@0.3.5:
     dependencies:
-      '@babel/parser': 7.25.7
+      '@babel/parser': 7.25.8
       '@babel/types': 7.25.8
       source-map-js: 1.2.1
 
