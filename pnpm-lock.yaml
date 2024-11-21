@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: 5.1.2
-        version: 5.1.2(astro@4.16.13(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.15)
+        version: 5.1.2(astro@4.16.14(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.15)
       '@iconify-json/fa-brands':
         specifier: 1.2.0
         version: 1.2.0
@@ -18,8 +18,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       astro:
-        specifier: 4.16.13
-        version: 4.16.13(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
+        specifier: 4.16.14
+        version: 4.16.14(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
       astro-font:
         specifier: 0.1.81
         version: 0.1.81
@@ -965,8 +965,8 @@ packages:
   astro-icon@1.1.2:
     resolution: {integrity: sha512-2qAHBtZLYuFEIMP0Ck0edyLi5fQmJjwP2Qbv41f8L4KAJ2sra/dH7q5lCOn4q0DHVtS0w3tPG8UKQRits3UPcg==}
 
-  astro@4.16.13:
-    resolution: {integrity: sha512-Mtd76+BC0zLWqoXpf9xc731AhdH4MNh5JFHYdLRvSH0Nqn48hA64dPGh/cWsJvh/DZFmC0NTZusM1Qq2gyNaVg==}
+  astro@4.16.14:
+    resolution: {integrity: sha512-2IuLkIp4idyspugq+F52rHZyNqHHi2AdQzuKp3SGytg/YAm50dNeWhP/7l+enjgWZLloLq5xsH5gVQpoDFoyFg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3068,9 +3068,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.13(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.15)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.14(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3))(tailwindcss@3.4.15)':
     dependencies:
-      astro: 4.16.13(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
+      astro: 4.16.14(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3925,7 +3925,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.16.13(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3):
+  astro@4.16.14(@types/node@22.7.4)(rollup@4.24.0)(typescript@5.6.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
