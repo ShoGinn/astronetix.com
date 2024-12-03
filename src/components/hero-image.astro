@@ -6,11 +6,11 @@ const widths = [450, 800, 1200];
 const sizes = '100vw';
 ---
 
-<Image
-  class="h-full w-full object-cover"
-  src={moonImage}
-  widths={widths}
-  sizes={sizes}
-  loading="eager"
-  alt="The ridged surface of the moon"
-/>
+<style>
+  img {
+    height: 100%; /* Equivalent to h-full */
+    width: 100%; /* Equivalent to w-full */
+    object-fit: cover; /* Equivalent to object-cover */
+  }
+</style>
+<Image src={moonImage} widths={widths} sizes={sizes} loading="eager" alt="The ridged surface of the moon" />

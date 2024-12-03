@@ -24,6 +24,9 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
 ---
 
 <style>
+  img {
+    width: auto;
+  }
   /* Ensure the body has a black background color */
   body {
     background-color: black;
@@ -57,7 +60,7 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-1">
     <div id="astronetix_logo" class="self-start justify-center">
-      <Image class="w-auto" src={astronetix} widths={widths} sizes={sizes} loading="eager" alt="Astronetix Logo" />
+      <Image src={astronetix} widths={widths} sizes={sizes} loading="eager" alt="Astronetix Logo" />
     </div>
     <div class="flex flex-col items-center gap-2 self-start sm:pt-12 sm:gap-4 sm:self-auto sm:justify-self-center">
       <p class="space-y-8 px-4 text-center font-custom">
