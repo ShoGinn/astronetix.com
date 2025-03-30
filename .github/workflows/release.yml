@@ -1,7 +1,7 @@
 name: Release
 on:
   workflow_run:
-    workflows: ["Proof"]
+    workflows: ['Proof']
     branches:
       - main
     types:
