@@ -63,7 +63,7 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
       <Image src={astronetix} widths={widths} sizes={sizes} loading="eager" alt="Astronetix Logo" />
     </div>
     <div class="flex flex-col items-center gap-2 self-start sm:gap-4 sm:self-auto sm:justify-self-center sm:pt-12">
-      <p class="space-y-8 px-4 text-center font-custom">
+      <p class="space-y-8 px-4 text-center font-ethnocentric">
         AstroNetix provides <span class="gradient-text text-primary">modern defense solutions</span> across the disciplines
         of Space, Cyber, and System Integration.
       </p>
@@ -116,9 +116,5 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
     #splash-bg-fallback {
       @apply block;
     }
-  }
-  .gradient-text {
-    @apply bg-clip-text text-transparent;
-    @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
   }
 </style>
