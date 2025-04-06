@@ -1,9 +1,7 @@
 ---
-import { AstroFont } from 'astro-font';
 import Splash from '~/components/splash.astro';
-import '~/styles/index.css';
+import '~/styles/global.css';
 import SEOMetadata from '~/components/seo-metadata.astro';
-import { join } from 'node:path';
 const description =
   'AstroNetix provides modern defense solutions across the disciplines of Space, Cyber, and System Integration.';
 ---
@@ -21,36 +19,8 @@ const description =
       canonicalUrl={Astro.url.toString()}
       type="website"
     />
-
-    <AstroFont
-      config={[
-        {
-          src: [
-            {
-              style: 'normal',
-              weight: '400',
-              path: join(process.cwd(), 'public', 'fonts', 'ethnocentric.ttf'),
-            },
-          ],
-          preload: false,
-          display: 'swap',
-          fallback: 'sans-serif',
-          name: 'Ethnocentric',
-          cssVariable: 'font-ethnocentric',
-        },
-        {
-          src: [],
-          preload: false,
-          display: 'swap',
-          fallback: 'sans-serif',
-          name: 'Inter Variable',
-          cssVariable: 'font-inter',
-          googleFontsURL: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900',
-        },
-      ]}
-    />
   </head>
-  <body class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white">
+  <body class="selection:bg-secondary font-inter h-full overflow-x-hidden selection:text-white">
     <Splash />
   </body>
 </html>

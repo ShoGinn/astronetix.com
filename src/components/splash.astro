@@ -27,10 +27,6 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
   img {
     width: auto;
   }
-  /* Ensure the body has a black background color */
-  body {
-    background-color: black;
-  }
 
   /* Ensure the Starfield component covers the entire viewport */
   #starfield {
@@ -59,16 +55,16 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
     <HeroImage />
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-1">
-    <div id="astronetix_logo" class="self-start justify-center">
+    <div id="astronetix_logo" class="justify-center self-start">
       <Image src={astronetix} widths={widths} sizes={sizes} loading="eager" alt="Astronetix Logo" />
     </div>
-    <div class="flex flex-col items-center gap-2 self-start sm:pt-12 sm:gap-4 sm:self-auto sm:justify-self-center">
-      <p class="space-y-8 px-4 text-center font-custom">
-        AstroNetix provides <span class="text-primary gradient-text">modern defense solutions</span> across the disciplines
+    <div class="flex flex-col items-center gap-2 self-start sm:gap-4 sm:self-auto sm:justify-self-center sm:pt-12">
+      <p class="font-ethnocentric space-y-8 px-4 text-center">
+        AstroNetix provides <span class="gradient-text text-primary">modern defense solutions</span> across the disciplines
         of Space, Cyber, and System Integration.
       </p>
       <p class="space-y-8 px-4 text-center">
-        We specialize in providing unique mission focused subject matter experts, who have practical real-world
+        We specialize in providing unique mission-focused subject matter experts, who have practical real-world
         experience and know how to improve our nation's security.
       </p>
     </div>
@@ -89,12 +85,12 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
     </ul>
   </div>
 </section>
+
 <style>
   @keyframes float {
     0% {
       transform: translate3d(0, 0, 0);
     }
-
     100% {
       transform: translate3d(0, 30px, 0);
     }
@@ -106,19 +102,15 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
 
   @media (prefers-reduced-motion: reduce) {
     #astronetix_logo {
-      @apply animate-none;
+      animation: none;
     }
 
     :global(#starfield) {
-      @apply hidden;
+      display: none;
     }
 
     #splash-bg-fallback {
-      @apply block;
+      display: block;
     }
-  }
-  .gradient-text {
-    @apply bg-clip-text text-transparent;
-    @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
   }
 </style>
