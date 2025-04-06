@@ -27,10 +27,6 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
   img {
     width: auto;
   }
-  /* Ensure the body has a black background color */
-  body {
-    background-color: black;
-  }
 
   /* Ensure the Starfield component covers the entire viewport */
   #starfield {
@@ -68,7 +64,7 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
         of Space, Cyber, and System Integration.
       </p>
       <p class="space-y-8 px-4 text-center">
-        We specialize in providing unique mission focused subject matter experts, who have practical real-world
+        We specialize in providing unique mission-focused subject matter experts, who have practical real-world
         experience and know how to improve our nation's security.
       </p>
     </div>
@@ -89,12 +85,12 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
     </ul>
   </div>
 </section>
+
 <style>
   @keyframes float {
     0% {
       transform: translate3d(0, 0, 0);
     }
-
     100% {
       transform: translate3d(0, 30px, 0);
     }
@@ -106,15 +102,15 @@ const sizes = '(min-width: 640px) 42vw, 67vw';
 
   @media (prefers-reduced-motion: reduce) {
     #astronetix_logo {
-      @apply animate-none;
+      animation: none;
     }
 
     :global(#starfield) {
-      @apply hidden;
+      display: none;
     }
 
     #splash-bg-fallback {
-      @apply block;
+      display: block;
     }
   }
 </style>

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import 'tailwindcss';
-:root {
-  color: white;
-  font-size: 1.25rem;
-}
 /* Define the Ethnocentric font */
 @font-face {
   font-family: 'Ethnocentric';
@@ -17,9 +13,12 @@
 .font-ethnocentric {
   font-family: 'Ethnocentric', sans-serif;
 }
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
 .gradient-text {
   @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent;
+}
+body {
+  background-color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  @apply bg-black text-white; /* Use Tailwind utilities for global styles */
 }
